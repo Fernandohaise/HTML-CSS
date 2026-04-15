@@ -1,0 +1,116 @@
+body {
+    background-color: #ddd;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    font-family: Arial, sans-serif;
+}
+
+/* Container principal */
+.container {
+    width: 80%;
+    height: 300px;
+    background-color: #eee;
+    border: 2px solid #555;
+    position: relative;
+}
+
+/* Menu no topo direito */
+.menu {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+}
+
+.menu a {
+    margin-left: 20px;
+    text-decoration: none;
+    color: black;
+    font-size: 14px;
+}
+
+/* Conteúdo central */
+.conteudo {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Rosto */
+.rosto {
+    width: 120px;
+    height: 120px;
+    border: 2px solid #555;
+    border-radius: 50%;
+    position: relative;
+}
+
+/* Olhos */
+.olhos {
+    display: flex;
+    justify-content: space-around;
+    position: absolute;
+    top: 35px;
+    width: 100%;
+}
+
+.olho {
+    width: 10px;
+    height: 10px;
+    border: 2px solid #555;
+    border-radius: 50%;
+}
+
+/* Boca */
+.boca {
+    width: 60px;
+    height: 30px;
+    border-bottom: 2px solid #555;
+    border-radius: 50%;
+    position: absolute;
+    bottom: 25px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+/* Animação de piscar */
+@keyframes piscar {
+    0%, 90%, 100% {
+        height: 10px;
+    }
+    95% {
+        height: 1px;
+    }
+}
+
+.olho {
+    width: 10px;
+    height: 10px;
+    border: 2px solid #555;
+    border-radius: 50%;
+    animation: piscar 3s infinite;
+}
+
+/* Animação da boca (sorriso leve) */
+@keyframes sorriso {
+    0%, 100% {
+        height: 30px;
+    }
+    50% {
+        height: 40px;
+    }
+}
+
+.boca {
+    width: 60px;
+    height: 30px;
+    border-bottom: 2px solid #555;
+    border-radius: 50%;
+    position: absolute;
+    bottom: 25px;
+    left: 50%;
+    transform: translateX(-50%);
+    animation: sorriso 2s ease-in-out infinite;
+}
