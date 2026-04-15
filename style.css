@@ -9,7 +9,7 @@ body {
 
 .container {
     width: 80%;
-    height: 300px;
+    height: 750px;
     background-color: #228fce;
     border: 2px solid #0f0f0f;
     position: relative;
@@ -38,8 +38,8 @@ body {
 
 
 .rosto {
-    width: 120px;
-    height: 120px;
+    width: 200px;
+    height: 200px;
     border: 2px solid #eeff00;
     border-radius: 50%;
     position: relative;
@@ -50,21 +50,21 @@ body {
     display: flex;
     justify-content: space-around;
     position: absolute;
-    top: 35px;
+    top: 70px;
     width: 100%;
 }
 
 .olho {
-    width: 10px;
-    height: 10px;
+    width: 30px;
+    height: px;
     border: 2px solid #eeff00;
     border-radius: 50%;
 }
 
 
 .boca {
-    width: 60px;
-    height: 30px;
+    width: 900px;
+    height: 900px;
     border-bottom: 2px solid #eeff00;
     border-radius: 50%;
     position: absolute;
@@ -101,8 +101,8 @@ body {
 }
 
 .boca {
-    width: 60px;
-    height: 30px;
+    width: 85px;
+    height: 90px;
     border-bottom: 2px solid #eeff00;
     border-radius: 50%;
     position: absolute;
